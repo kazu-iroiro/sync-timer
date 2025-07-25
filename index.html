@@ -11,10 +11,13 @@
 
 <body>
     <header class="header">Sync Timer</header>
-    <div class="display"></div>
+    <div class="display">
+        <p class="clock" id="nowTime">--:--:--</p>
+        <p class="clock" id="startTime">--:--:--</p>
+    </div>
     <div class="qrcode">
-        <button type="button" class="switch" id="makeQrButton"></button>
-        <canvas id="qr"></canvas>
+        <button type="button" class="switch" id="makeQR">QRコード生成</button>
+        <div><canvas id="qr"></canvas></div>
     </div>
     <span>QRコードは株式会社デンソーウェーブの登録商標です</span>
 
