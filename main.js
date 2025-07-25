@@ -47,7 +47,7 @@ function getdoubleDigestNumer(number) {
 
 let qr = new QRious({
     element: document.getElementById('qr'),
-    value: 'https://synctimer.iroirolink.com/index.html?unixStartTime=' + Math.round((new Date()).getTime() / 1000)
+    value: 'https://synctimer.iroirolink.com/index.html?unixStartTime='
 });
 
 function makeQR() {
@@ -101,7 +101,7 @@ document.getElementById("startStopWatch").addEventListener('click', function () 
 
 document.getElementById("shareButton").addEventListener('click', async function () {
     if (!startTimeFlag)
-        alert("時刻を固定しろやください")
+        alert("時刻を固定してから利用可能です")
     else
         var link = 'https://synctimer.iroirolink.com/index.html?unixStartTime=' + Math.round(startTime.getTime() / 1000);
     try {
