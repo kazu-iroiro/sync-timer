@@ -1,0 +1,10 @@
+FM タイマー
+
+1台目で表示
+n秒後に開始ボタン / HH:MMに開始ボタン
+
+UNIX時間でいつから開始か QRコードを表示
+
+https://synctimer.iroirolink.com/index.html?(UNIX時間)
+
+アクセスすると現在時刻と照合
