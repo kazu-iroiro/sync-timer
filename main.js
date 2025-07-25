@@ -1,15 +1,31 @@
 (window.onload = function () {
     setInterval(() => {
-        setTime(nowTimeDisp, "Now", new Date());
-    }, 1000)
+        var nowTime = new Date();
+        setTime(nowTimeDisp, "Now", nowTime);
 
-    setInterval(() => {
         if (!startTimeFlag)
-            setTime(startTimeDisp, "Start", new Date());
-    }, 1000)
+            startTime = nowTime;
+            setTime(startTimeDisp, "Start", startTime);
 
-    setInterval(() => {
-        setTime(targetTimeDisp, "Diff", (new Date()-startTimeDisp));
+        var diffMilliSec = (nowTime) - startTime;
+
+        var minus="+";
+        if (diffMilliSec < 0)
+            minus = "-"
+
+        // 秒数の計算
+        var tmpSec = Math.abs(diffMilliSec / 1000);
+        // 秒として残る部分
+        var Sec = Math.floor(tmpSec % 60);
+        // 分として分けられる部分
+        var tmpMin = Math.floor(tmpSec / 60);
+        // 実際に分の部分
+        var Min = Math.floor(tmpMin % 60);
+        // 時間として残る部分
+        var Hour = Math.floor(tmpMin / 60);
+
+        targetTime.innerText = "Diff: " + minus + getdoubleDigestNumer(Hour) + ":" + getdoubleDigestNumer(Min) + ":" + getdoubleDigestNumer(Sec);
+
     }, 1000)
 })();
 
