@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <title>Sync Timer</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
-        <script src="QRious.js"></script>
-    </head>
-    <body>
-        <header class="header">Sync Timer</header>
-        <div class="display"></div>
-        <div class="qrcode"></div>
-        <span>QRコードは株式会社デンソーウェーブの登録商標です</span>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sync Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="qrious.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header">Sync Timer</header>
+    <div class="display"></div>
+    <div class="qrcode">
+        <button type="button" class="switch" id="makeQrButton"></button>
+        <canvas id="qr"></canvas>
+    </div>
+    <span>QRコードは株式会社デンソーウェーブの登録商標です</span>
+
+
+    <!--js-->
+    <script src="main.js"></script>
+
+</body>
+
 </html>
