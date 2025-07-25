@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: aliceblue;
+    padding: 0.5svw 1svw;
+    font-size: 3svw;
+}
+
+.display {
+    margin: 4svw;
+}
+
+.clock {
+    text-align: right;
+    font-size: 5svw;
+    margin: 0;
+    margin-right: 30svw;
+}
+
+#targetTime {
+    font-size: 5svw;
+}
+
+.control {
+    text-align: center;
+}
+
+.button {
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    margin: 0.1svw;
+    padding: 1svw 2svw;
+    border: solid 0.1svw #000000;
+    border-radius: 1svw;
+    text-decoration: none;
+}
+
+.buttonText {
+    margin: 0;
+    padding: 0;
+}
+
+.qrcode {
+    text-align: center;
+    margin-top: 5svw;
+}
+
+#qr {
+    width: 10svw;
+}
