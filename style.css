@@ -47,7 +47,7 @@ body {
 
 .qrcode {
     text-align: center;
-    margin-top: 5svw;
+    margin: 5svw 0;
 }
 
 #qr {
