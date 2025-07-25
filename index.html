@@ -14,9 +14,31 @@
     <div class="display">
         <p class="clock" id="nowTime">--:--:--</p>
         <p class="clock" id="startTime">--:--:--</p>
+        <p class="clock" id="targetTime">--:--:--</p>
+
+    </div>
+    <div class="control">
+        <div class="buttons">
+            <button type="button" class="button" id="plusTenHours">+10H</button>
+            <button type="button" class="button" id="plusTenMins">+10M</button>
+            <button type="button" class="button" id="plusTenSecs">+10s</button>
+        </div>
+
+        <div class="buttons">
+            <button type="button" class="button" id="plusFiveHours">+ 5H</button>
+            <button type="button" class="button" id="plusFiveMins">+ 5M</button>
+            <button type="button" class="button" id="plusFiveSecs">+ 5s</button>
+        </div>
+
+        <div class="buttons">
+            <button type="button" class="button" id="plusOneHour">+ 1H</button>
+            <button type="button" class="button" id="plusOneMin">+ 1M</button>
+            <button type="button" class="button" id="plusOneSec">+ 1s</button>
+        </div>
+
     </div>
     <div class="qrcode">
-        <button type="button" class="switch" id="makeQR">QRコード生成</button>
+        <button type="button" class="button" id="makeQR">QRコード生成</button>
         <div><canvas id="qr"></canvas></div>
     </div>
     <span>QRコードは株式会社デンソーウェーブの登録商標です</span>
