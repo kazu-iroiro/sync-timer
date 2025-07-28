@@ -26,7 +26,7 @@
 
         targetTime.innerText = "Diff: " + minus + getdoubleDigestNumer(Hour) + ":" + getdoubleDigestNumer(Min) + ":" + getdoubleDigestNumer(Sec);
 
-    }, 1000)
+    }, 100)
 })();
 
 
