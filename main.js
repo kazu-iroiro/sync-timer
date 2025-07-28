@@ -16,7 +16,7 @@
         // 秒数の計算
         var tmpSec = Math.abs((diffMilliSec - diffMilliSec % 1000) / 1000);
         // 秒として残る部分
-        var Sec = Math.floor(tmpSec % 60);
+        var Sec = tmpSec % 60;
         // 分として分けられる部分
         var tmpMin = tmpSec / 60;
         // 実際に分の部分
