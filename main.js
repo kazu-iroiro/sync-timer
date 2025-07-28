@@ -4,7 +4,7 @@
         setTime(nowTimeDisp, "Now", nowTime);
 
         if (!startTimeFlag)
-            startTime = nowTime - nowTime % 1000;
+            startTime = nowTime;
         setTime(startTimeDisp, "Start", startTime);
 
         var diffMilliSec = (nowTime) - startTime;
